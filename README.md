@@ -2,6 +2,46 @@
 
 用modflow模拟地下水，溶质运移，溯源。利用GMS预处理不规则边界。
 
+1. `modflow_ipynbook文件夹`中的`modflow最终功能实现-2D转化-溯源-add河流-chd插值-正确.ipynb`这个文件是最完整的文件。
+2. `modflow文件夹`内是`modflow的可执行文件`，包括modflow、modpath、mt3dms等。用到的为
+   - modflow\mp7
+   - modflow\mf6
+3. 用到 python 的包为 FloPy 和 h5py，flowpy可以支持如下的[modflow模型](https://github.com/modflowpy/flopy/blob/58cb48e7a6240d2a01039b5a5ab3c67c5111662c/docs/supported_packages.md#flopy-supported-packages)，
+
+
+当模型遇到无法解决的问题，可以查找源码中的注释，如下为[flopy的源码](https://github.com/modflowpy/flopy/tree/cb8c21907ef35172c792419d59e163a86e6f0939/flopy/mf6/modflow)、[modpath的源码](https://github.com/modflowpy/flopy/tree/a13f8b940c9057d18732d8d49ec25d2b9b2f362e/flopy/modpath)、[modflow 6的官方手册](https://flopy.readthedocs.io/en/latest/_notebooks/tutorial03_mf6_data.html)
+
+如下为[modflow的官方教程](https://github.com/modflowpy/flopy/blob/78e42643ebc8eb5ca3109de5b335e18c3c6e8159/docs/notebook_examples.md)，需用jupyter notebook打开，也可以直接进入这个[目录](https://github.com/modflowpy/flopy/tree/2749f16765b70d842940f4be79c169aa0c03ee74/examples/Notebooks)
+
+
+1. 如果想要了解非均匀网格，可以参考[这个链接](https://github.com/modflowpy/flopy/blob/78e42643ebc8eb5ca3109de5b335e18c3c6e8159/examples/Notebooks/flopy3_gridgen.ipynb)
+
+2. 如下是modpath比较好的[教程1结构化网格](https://github.com/modflowpy/flopy/blob/78e42643ebc8eb5ca3109de5b335e18c3c6e8159/examples/Notebooks/flopy3_modpath7_structured_example.ipynb)和[教程2非结构网格](https://github.com/modflowpy/flopy/blob/78e42643ebc8eb5ca3109de5b335e18c3c6e8159/examples/Notebooks/flopy3_modpath7_unstructured_example.ipynb)：
+
+3. 如下是[mt3dms垂向的模型](https://github.com/modflowpy/flopy/blob/78e42643ebc8eb5ca3109de5b335e18c3c6e8159/examples/Notebooks/flopy3_MT3DMS_examples.ipynb)教程
+
+4. [将模型结果导出成shp或者tif](https://github.com/modflowpy/flopy/blob/78e42643ebc8eb5ca3109de5b335e18c3c6e8159/examples/Notebooks/flopy3_Modflow_postprocessing_example.ipynb)
+
+## 关于常州土壤和地下水预警系统，可以参考如下项目
+
+[提取站点污染物浓度或者站点排放](https://github.com/AlfreadChen/city_coap)
+
+[万睿智慧园区解决方案](https://market.cloud.tencent.com/products/36456)
+
+[RAMEV C4 智能数据采集通讯终端](https://market.cloud.tencent.com/products/22792)
+
+[物联网卡贴片卡工业物联网卡流量卡](https://market.cloud.tencent.com/products/29414)
+
+[4G网关 WIFI网关 网关模组 家庭网关 智能家居 智能硬件 mesh模组 ZigBee模组](https://market.cloud.tencent.com/products/18251)
+
+[智慧水务管理平台智能水表水质监测系统平台设备安装施工运维落地定制软件开发源码](https://market.cloud.tencent.com/products/24303)
+
+[农业物联网大数据平台](https://market.cloud.tencent.com/products/33844)
+
+[智慧城市数字孪生可视化管理平台](https://market.cloud.tencent.com/products/34588)
+
+[小程序定制开发 -IoT、智能家居、物联网、车联网、智慧城市、医疗健康](https://market.cloud.tencent.com/products/14107)
+
 ## 小白零基础入门
 
 需要安装：
@@ -12,6 +52,31 @@
 3. win10系统 - 在软件商店安装 Debian 虚拟机
    - 也可安装 Ubuntu 或者 CentOS
 4. 一个Github账户
+
+## python基础
+
+```py
+主要的数据结构包括：
+
+- list 用 [] 表示
+- dictionary 用 {} 表示
+
+需要学习一些 numpy、matplotlib 的基础
+- np.ones() 表示创建都是1的矩阵
+- np.zeros() 表示创建都是0的矩阵
+- 等等
+
+import 导入包
+def 创建函数
+print 打印
+
+
+"",'' 都表示字符
+for 表示循环
+
+range(5) 表示创建一个[0,1,2,3,4]的list
+
+```
 
 ## 进行一些基础配置
 
