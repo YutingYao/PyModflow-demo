@@ -1,0 +1,24 @@
+# MF2K NAME file
+#
+# Output Files
+GLOBAL       701 "2022.10.20-JMFQF.glo"
+LIST         702 "2022.10.20-JMFQF.out"
+DATA(BINARY) 730 "2022.10.20-JMFQF.hed"
+DATA(BINARY) 740 "2022.10.20-JMFQF.ccf"
+LMT6         718 "2022.10.20-JMFQF.lmt"
+#
+# Obs-Sen-Pes Process Input Files
+OBS          750 "2022.10.20-JMFQF.obs"
+HOB          751 "2022.10.20-JMFQF.hob"
+ASP          771 "2022.10.20-JMFQF.asp"
+#
+# Global Input Files
+DIS          719 "2022.10.20-JMFQF.dis"
+#
+# Flow Process Input Files
+BAS6         703 "2022.10.20-JMFQF.ba6"
+LPF          704 "2022.10.20-JMFQF.lpf"
+OC           715 "2022.10.20-JMFQF.oc"
+RCH          716 "2022.10.20-JMFQF.rch"
+EVT          712 "2022.10.20-JMFQF.evt"
+PCG          714 "2022.10.20-JMFQF.pcg"

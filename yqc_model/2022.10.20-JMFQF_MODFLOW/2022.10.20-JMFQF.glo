@@ -1,0 +1,324 @@
+                                  MODFLOW-2000
+      U.S. GEOLOGICAL SURVEY MODULAR FINITE-DIFFERENCE GROUND-WATER FLOW MODEL
+                           VERSION 1.19.01 03/25/2010
+
+
+ This model run produced both GLOBAL and LIST files.  This is the GLOBAL file.
+
+ GLOBAL LISTING FILE: "2022.10.20-JMFQF.glo"
+                         UNIT  701
+
+ OPENING "2022.10.20-JMFQF.out"
+ FILE TYPE:LIST   UNIT  702   STATUS:REPLACE
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "2022.10.20-JMFQF.hed"
+ FILE TYPE:DATA(BINARY)   UNIT  730   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING "2022.10.20-JMFQF.ccf"
+ FILE TYPE:DATA(BINARY)   UNIT  740   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING "2022.10.20-JMFQF.lmt"
+ FILE TYPE:LMT6   UNIT  718   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+#                                                                                                                                                                                                       
+# Obs-Sen-Pes Process Input Files                                                                                                                                                                       
+
+ OPENING "2022.10.20-JMFQF.obs"
+ FILE TYPE:OBS   UNIT  750   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "2022.10.20-JMFQF.hob"
+ FILE TYPE:HOB   UNIT  751   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ FILE TYPE:ASP: FILE = 2022.10.20-JMFQF.asp
+#                                                                                                                                                                                                       
+# Global Input Files                                                                                                                                                                                    
+
+ OPENING "2022.10.20-JMFQF.dis"
+ FILE TYPE:DIS   UNIT  719   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+#                                                                                                                                                                                                       
+# Flow Process Input Files                                                                                                                                                                              
+
+ OPENING "2022.10.20-JMFQF.ba6"
+ FILE TYPE:BAS6   UNIT  703   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "2022.10.20-JMFQF.lpf"
+ FILE TYPE:LPF   UNIT  704   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "2022.10.20-JMFQF.oc"
+ FILE TYPE:OC   UNIT  715   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "2022.10.20-JMFQF.rch"
+ FILE TYPE:RCH   UNIT  716   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "2022.10.20-JMFQF.evt"
+ FILE TYPE:EVT   UNIT  712   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "2022.10.20-JMFQF.pcg"
+ FILE TYPE:PCG   UNIT  714   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ THE FREE FORMAT OPTION HAS BEEN SELECTED
+
+ DISCRETIZATION INPUT DATA READ FROM UNIT  719
+ # MF2K DISCRETIZATION FILE
+ #
+ #
+ # NLAY NROW NCOL NPER TIMEUNITS LENUNITS
+    4 LAYERS       231 ROWS       259 COLUMNS
+    1 STRESS PERIOD(S) IN SIMULATION
+ MODEL TIME UNIT IS DAYS
+ MODEL LENGTH UNIT IS METERS
+ THE GROUND-WATER TRANSPORT PROCESS IS INACTIVE
+
+ THE OBSERVATION PROCESS IS ACTIVE
+ THE SENSITIVITY PROCESS IS INACTIVE
+ THE PARAMETER-ESTIMATION PROCESS IS INACTIVE
+
+ MODE: FORWARD WITH OBSERVATIONS
+
+  Confining bed flag for each layer:
+   0   0   0   0
+
+    2154334  ELEMENTS OF GX ARRAY USED OUT OF    2154334
+     239316  ELEMENTS OF GZ ARRAY USED OUT OF     239316
+     239316  ELEMENTS OF IG ARRAY USED OUT OF     239316
+
+ -------------------------------------------------------------------------------
+
+ VARIABLES READ FROM ASP INPUT FILE:-
+
+ NOSTOP = 0          : CEASE EXECUTION IF MODFLOW FAILS TO CONVERGE.
+ HYDRYBOT = 0        : ASSIGN HDRY TO HEAD IN DRY CELL.
+ MINTHICK =     0.000: DO NOT PREVENT BASAL CELLS DRYING OUT.
+ LIMOP = 0           : NO LIMITATIONS ON OBSERVATION OR SENSITIVITY OUTPUT.
+
+ -------------------------------------------------------------------------------
+
+
+
+
+                               DELR
+ READING ON UNIT  719 WITH FORMAT: (FREE)              
+
+
+
+                               DELC
+ READING ON UNIT  719 WITH FORMAT: (FREE)              
+
+
+ STRESS PERIOD     LENGTH       TIME STEPS     MULTIPLIER FOR DELT    SS FLAG
+ ----------------------------------------------------------------------------
+        1         1.000000          1                    1.000         SS
+
+ STEADY-STATE SIMULATION
+
+
+
+
+ LPF1 -- LAYER PROPERTY FLOW PACKAGE, VERSION 1, 1/11/2000
+         INPUT READ FROM UNIT  704
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT  740
+ HEAD AT CELLS THAT CONVERT TO DRY=  -888.00    
+ No named parameters
+
+   LAYER FLAGS:
+ LAYER       LAYTYP        LAYAVG         CHANI        LAYVKA        LAYWET
+ ---------------------------------------------------------------------------
+    1             1             0    -1.000E+00             1             0
+    2             1             0    -1.000E+00             1             0
+    3             1             0    -1.000E+00             1             0
+    4             1             0    -1.000E+00             1             0
+
+   INTERPRETATION OF LAYER FLAGS:
+                        INTERBLOCK     HORIZONTAL    DATA IN
+         LAYER TYPE   TRANSMISSIVITY   ANISOTROPY   ARRAY VKA   WETTABILITY
+ LAYER      (LAYTYP)      (LAYAVG)       (CHANI)      (LAYVKA)      (LAYWET)
+ ---------------------------------------------------------------------------
+    1   CONVERTIBLE      HARMONIC      VARIABLE    ANISOTROPY  NON-WETTABLE
+    2   CONVERTIBLE      HARMONIC      VARIABLE    ANISOTROPY  NON-WETTABLE
+    3   CONVERTIBLE      HARMONIC      VARIABLE    ANISOTROPY  NON-WETTABLE
+    4   CONVERTIBLE      HARMONIC      VARIABLE    ANISOTROPY  NON-WETTABLE
+
+     717948 ELEMENTS IN X ARRAY ARE USED BY LPF
+         24 ELEMENTS IN IX ARRAY ARE USED BY LPF
+
+ PCG2 -- CONJUGATE GRADIENT SOLUTION PACKAGE, VERSION 2.4, 12/29/98
+ MAXIMUM OF     25 CALLS OF SOLUTION ROUTINE
+ MAXIMUM OF     50 INTERNAL ITERATIONS PER CALL TO SOLUTION ROUTINE
+ MATRIX PRECONDITIONING TYPE :    1
+     481132 ELEMENTS IN X ARRAY ARE USED BY PCG
+       8750 ELEMENTS IN IX ARRAY ARE USED BY PCG
+     957264 ELEMENTS IN Z ARRAY ARE USED BY PCG
+
+ OBS1BAS6 -- OBSERVATION PROCESS, VERSION 1.0, 4/27/99
+ INPUT READ FROM UNIT 750
+ OBSERVATION GRAPH-DATA OUTPUT FILES
+ WILL BE PRINTED AND NAMED USING THE BASE: 2022.10.20-JMFQF
+
+ HEAD OBSERVATIONS -- INPUT READ FROM UNIT 751
+ #           CoverageGUID ObjectType ID X Y Time OBNAME
+ #GMSCOMMENT 7d2f3e80-f8a2-4e47-8329-3cdb4032fd51 POINT 42, 504880.563, 3602374.931 ts_0 hed1
+ #GMSCOMMENT 7d2f3e80-f8a2-4e47-8329-3cdb4032fd51 POINT 43, 504117.3092, 3602111.468 ts_0 hed2
+ #GMSCOMMENT 7d2f3e80-f8a2-4e47-8329-3cdb4032fd51 POINT 44, 504157.1902, 3602094.361 ts_0 hed3
+ #GMSCOMMENT 7d2f3e80-f8a2-4e47-8329-3cdb4032fd51 POINT 45, 502457.3033, 3601135.086 ts_0 hed4
+ #GMSCOMMENT 7d2f3e80-f8a2-4e47-8329-3cdb4032fd51 POINT 46, 502908.5862, 3603449.06 ts_0 hed5
+ #GMSCOMMENT 7d2f3e80-f8a2-4e47-8329-3cdb4032fd51 POINT 47, 504611.705, 3600406.404 ts_0 hed6
+ #GMSCOMMENT 7d2f3e80-f8a2-4e47-8329-3cdb4032fd51 POINT 48, 506331.736, 3601722.066 ts_0 hed7
+ #GMSCOMMENT 7d2f3e80-f8a2-4e47-8329-3cdb4032fd51 POINT 49, 507166.0801, 3600298.669 ts_0 hed8
+ #GMSCOMMENT 7d2f3e80-f8a2-4e47-8329-3cdb4032fd51 POINT 50, 509460.7424, 3601093.531 ts_0 hed9
+ #GMSCOMMENT 7d2f3e80-f8a2-4e47-8329-3cdb4032fd51 POINT 51, 500709.0523, 3599447.538 ts_0 hed10
+ #GMSCOMMENT 7d2f3e80-f8a2-4e47-8329-3cdb4032fd51 POINT 52, 502234.2554, 3598827.322 ts_0 hed11
+ #GMSCOMMENT 7d2f3e80-f8a2-4e47-8329-3cdb4032fd51 POINT 53, 503326.2458, 3599768.139 ts_0 hed12
+ #GMSCOMMENT 7d2f3e80-f8a2-4e47-8329-3cdb4032fd51 POINT 54, 504821.8048, 3599141.615 ts_0 hed13
+ #GMSCOMMENT 7d2f3e80-f8a2-4e47-8329-3cdb4032fd51 POINT 55, 505251.6403, 3597626.758 ts_0 hed14
+ #GMSCOMMENT 7d2f3e80-f8a2-4e47-8329-3cdb4032fd51 POINT 56, 506047.1357, 3599328.677 ts_0 hed15
+
+ NUMBER OF HEADS....................................:   15
+   NUMBER OF MULTILAYER HEADS.......................:    0
+   MAXIMUM NUMBER OF LAYERS FOR MULTILAYER HEADS....:    4
+
+        245 ELEMENTS IN X ARRAY ARE USED FOR OBSERVATIONS
+          2 ELEMENTS IN Z ARRAY ARE USED FOR OBSERVATIONS
+        153 ELEMENTS IN IX ARRAY ARE USED FOR OBSERVATIONS
+
+ COMMON ERROR VARIANCE FOR ALL OBSERVATIONS SET TO:       1.000    
+
+    1199325  ELEMENTS OF X ARRAY USED OUT OF    1199325
+     957266  ELEMENTS OF Z ARRAY USED OUT OF     957266
+       8927  ELEMENTS OF IX ARRAY USED OUT OF       8927
+          0  ELEMENTS OF XHS ARRAY USED OUT OF          1
+
+ HEAD OBSERVATION VARIANCES ARE MULTIPLIED BY:       1.000    
+
+ OBSERVED HEAD DATA -- TIME OFFSETS ARE MULTIPLIED BY:   1.0000    
+
+                    REFER.
+       OBSERVATION  STRESS    TIME                              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET    OBSERVATION  STATISTIC     TYPE      SYM.
+     1 hed1             1    0.000       1.835      0.5102      STD. DEV.      1
+     2 hed2             1    0.000       2.068      0.5102      STD. DEV.      1
+     3 hed3             1    0.000       2.066      0.5102      STD. DEV.      1
+     4 hed4             1    0.000       2.253      0.5102      STD. DEV.      1
+     5 hed5             1    0.000       2.087      0.5102      STD. DEV.      1
+     6 hed6             1    0.000       2.235      0.5102      STD. DEV.      1
+     7 hed7             1    0.000       2.063      0.5102      STD. DEV.      1
+     8 hed8             1    0.000       2.212      0.5102      STD. DEV.      1
+     9 hed9             1    0.000       1.710      0.5102      STD. DEV.      1
+    10 hed10            1    0.000       3.113      0.5102      STD. DEV.      1
+    11 hed11            1    0.000       3.007      0.5102      STD. DEV.      1
+    12 hed12            1    0.000       2.608      0.5102      STD. DEV.      1
+    13 hed13            1    0.000       2.550      0.5102      STD. DEV.      1
+    14 hed14            1    0.000       3.079      0.5102      STD. DEV.      1
+    15 hed15            1    0.000       2.536      0.5102      STD. DEV.      1
+
+                                                     HEAD CHANGE
+                                                      REFERENCE
+        OBSERVATION                   ROW     COL    OBSERVATION
+  OBS#     NAME       LAY  ROW  COL  OFFSET  OFFSET   (IF > 0)
+     1  hed1            1  115  134  -0.126   0.038        0
+     2  hed2            1  141   64  -0.229  -0.256        0
+     3  hed3            1  142   65  -0.073  -0.254        0
+     4  hed4            1  162   44   0.175   0.032        0
+     5  hed5            1   19   49   0.153  -0.435        0
+     6  hed6            1  169  102   0.488   0.337        0
+     7  hed7            1  154  160   0.382   0.050        0
+     8  hed8            1  171  206  -0.431  -0.063        0
+     9  hed9            1  163  231  -0.408   0.330        0
+    10  hed10           1  179   26   0.111   0.470        0
+    11  hed11           1  185   42   0.336  -0.209        0
+    12  hed12           1  176   53  -0.106  -0.240        0
+    13  hed13           1  182  131   0.182  -0.218        0
+    14  hed14           1  197  144   0.385   0.413        0
+    15  hed15           1  180  155   0.304  -0.330        0
+
+
+
+                                    SOLUTION BY THE CONJUGATE-GRADIENT METHOD
+                                   -------------------------------------------
+                    MAXIMUM NUMBER OF CALLS TO PCG ROUTINE =       25
+                        MAXIMUM ITERATIONS PER CALL TO PCG =       50
+                               MATRIX PRECONDITIONING TYPE =        1
+        RELAXATION FACTOR (ONLY USED WITH PRECOND. TYPE 1) =    0.10000E+01
+ PARAMETER OF POLYNOMIAL PRECOND. = 2 (2) OR IS CALCULATED :        0
+                         HEAD CHANGE CRITERION FOR CLOSURE =    0.10000E-01
+                     RESIDUAL CHANGE CRITERION FOR CLOSURE =    0.10000E-01
+            PCG HEAD AND RESIDUAL CHANGE PRINTOUT INTERVAL =      999
+     PRINTING FROM SOLVER IS LIMITED(1) OR SUPPRESSED (>1) =        2
+                                         DAMPING PARAMETER =    0.10000E+01
+
+ WETTING CAPABILITY IS NOT ACTIVE IN ANY LAYER
+
+
+     0 Evapotranspiration parameters
+
+
+     0 Recharge parameters
+
+ SMALLEST AND LARGEST WEIGHTED RESIDUALS
+
+      SMALLEST WEIGHTED RESIDUALS      |       LARGEST WEIGHTED RESIDUALS
+                WEIGHTED   PERCENT OF  |                 WEIGHTED   PERCENT OF
+ NAME           RESIDUAL    OBJ FUNC   |  NAME           RESIDUAL    OBJ FUNC
+ hed9          -0.501        21.88     |  hed14          0.389        13.16
+ hed1          -0.463        18.65     |  hed10          0.297         7.69
+ hed4          -0.377        12.37     |  hed11          0.174         2.63
+ hed6          -0.353        10.88     |  hed5           0.110         1.06
+ hed3          -0.225         4.40     |  hed15          0.994E-01     0.86
+
+ STATISTICS FOR ALL RESIDUALS :
+ AVERAGE WEIGHTED RESIDUAL  :-0.886E-01
+ # RESIDUALS >= 0. :      5
+ # RESIDUALS < 0.  :     10
+ NUMBER OF RUNS  :    6  IN   15 OBSERVATIONS
+
+ INTERPRETING THE CALCULATED RUNS STATISTIC VALUE OF    -0.710    
+ NOTE: THE FOLLOWING APPLIES ONLY IF 
+        # RESIDUALS >= 0 . IS GREATER THAN 10 AND 
+        # RESIDUALS < 0.   IS GREATER THAN 10
+ THE NEGATIVE VALUE MAY INDICATE TOO FEW RUNS:
+    IF THE VALUE IS LESS THAN -1.28, THERE IS LESS THAN A 10 PERCENT
+       CHANCE THE VALUES ARE RANDOM,
+    IF THE VALUE IS LESS THAN -1.645, THERE IS LESS THAN A 5 PERCENT
+       CHANCE THE VALUES ARE RANDOM,
+    IF THE VALUE IS LESS THAN -1.96, THERE IS LESS THAN A 2.5 PERCENT
+       CHANCE THE VALUES ARE RANDOM.
+
+
+ CORRELATION BETWEEN ORDERED WEIGHTED RESIDUALS AND NORMAL ORDER STATISTICS
+ FOR OBSERVATIONS =    0.981    
+
+ --------------------------------------------------------------------------
+ COMMENTS ON THE INTERPRETATION OF THE CORRELATION BETWEEN
+ WEIGHTED RESIDUALS AND NORMAL ORDER STATISTICS:
+
+ Generally, IF the reported CORRELATION is LESS than the critical value,
+ at the selected significance level (usually 5 or 10%), the hypothesis
+ that the weighted residuals are INDEPENDENT AND NORMALLY DISTRIBUTED
+ would be REJECTED.  HOWEVER, in this case, conditions are outside of
+ the range of published critical values as discussed below.
+
+ The sum of the number of observations and prior information items is    15
+ which is less than 35, the minimum value for which critical values are
+ published.  Therefore, the critical values for the 5 and 10% significance
+ levels are less than 0.943 and 0.952, respectively.
+
+ CORRELATIONS GREATER than these critical values indicate that, probably, the 
+ weighted residuals ARE INDEPENDENT AND NORMALLY DISTRIBUTED.
+
+ Correlations LESS than these critical values MAY BE ACCEPTABLE, and
+ rejection of the hypothesis is not necessarily warranted.
+
+ The Kolmogorov-Smirnov test can be used to further evaluate the residuals.
+ --------------------------------------------------------------------------
+

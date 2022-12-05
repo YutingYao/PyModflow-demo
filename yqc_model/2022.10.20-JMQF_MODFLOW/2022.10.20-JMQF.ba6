@@ -1,0 +1,12 @@
+#GMS MODFLOW Simulation
+#08 October 2017
+FREE
+HDF5 1.0 -1 "2022.10.20-JMQF.h5" "Arrays/ibound1" 1 0 59829
+HDF5 1.0 -1 "2022.10.20-JMQF.h5" "Arrays/ibound2" 1 0 59829
+HDF5 1.0 -1 "2022.10.20-JMQF.h5" "Arrays/ibound3" 1 0 59829
+HDF5 1.0 -1 "2022.10.20-JMQF.h5" "Arrays/ibound4" 1 0 59829
+-999.0
+HDF5 1.0 -1 "2022.10.20-JMQF.h5" "Arrays/StartHead1" 1 0 59829
+HDF5 1.0 -1 "2022.10.20-JMQF.h5" "Arrays/StartHead2" 1 0 59829
+HDF5 1.0 -1 "2022.10.20-JMQF.h5" "Arrays/StartHead3" 1 0 59829
+HDF5 1.0 -1 "2022.10.20-JMQF.h5" "Arrays/StartHead4" 1 0 59829
